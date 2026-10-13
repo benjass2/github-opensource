@@ -1,0 +1,47 @@
+
+<mat-card class="node-card">
+  <mat-card-header>
+    <mat-card-title>{{ node().name }}</mat-card-title>
+    <mat-card-subtitle>{{ node().location }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <h3>{{ 'node.repositories' | translate }}</h3>
+
+    @for (manifest of manifests(); track manifest.id) {
+      <div class="repository">
+        <strong>{{ manifest.repositoryName }}</strong>
+        <p>{{ manifest.fullName }}</p>
+        <p>
+          {{ 'node.allocated' | translate }}:
+          {{ manifest.allocatedSizeGb }} GB
+        </p>
+      </div>
+    } @empty {
+      <p>{{ 'node.noRepositories' | translate }}</p>
+    }
+  </mat-card-content>
+
+  <mat-card-footer>
+    <div class="capacity">
+      <p>
+        {{ 'node.totalAllocated' | translate }}:
+        {{ totalAllocated() }} GB
+      </p>
+      <p>
+        {{ 'node.available' | translate }}:
+        {{ availableCapacity() }} GB
+      </p>
+      <p>
+        {{ 'node.utilization' | translate }}:
+        {{ utilization().toFixed(1) }}%
+      </p>
+      <p>
+        {{ 'node.status' | translate }}:
+        <span [class]="status().toLowerCase()">
+          {{ ('node.' + status().toLowerCase()) | translate }}
+        </span>
+      </p>
+    </div>
+  </mat-card-footer>
+</mat-card>

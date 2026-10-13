@@ -1,0 +1,33 @@
+
+{
+  "toolbar": {
+    "title": "GitHub CI/CD Management"
+  },
+  "sidebar": {
+    "home": "Home",
+    "newManifest": "New Repository Manifest"
+  },
+  "home": {
+    "title": "Home",
+    "description": "Advanced CI/CD Node and Open Source Repository Management Platform.",
+    "nodesTitle": "My CI Nodes",
+    "empty": "No CI nodes available."
+  },
+  "node": {
+    "repositories": "Repositories",
+    "noRepositories": "No repositories assigned.",
+    "allocated": "Allocated",
+    "totalAllocated": "Total allocated",
+    "available": "Available",
+    "utilization": "Utilization",
+    "status": "Status",
+    "normal": "Normal",
+    "warning": "Warning",
+    "critical": "Critical"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The requested page does not exist.",
+    "back": "Back to Home"
+  }
+}

@@ -1,0 +1,33 @@
+
+{
+  "toolbar": {
+    "title": "Gestión de CI/CD de GitHub"
+  },
+  "sidebar": {
+    "home": "Inicio",
+    "newManifest": "Nuevo manifiesto de repositorio"
+  },
+  "home": {
+    "title": "Inicio",
+    "description": "Plataforma avanzada de gestión de nodos CI/CD y repositorios de código abierto.",
+    "nodesTitle": "Mis nodos CI",
+    "empty": "No hay nodos CI disponibles."
+  },
+  "node": {
+    "repositories": "Repositorios",
+    "noRepositories": "No hay repositorios asignados.",
+    "allocated": "Asignado",
+    "totalAllocated": "Total asignado",
+    "available": "Disponible",
+    "utilization": "Utilización",
+    "status": "Estado",
+    "normal": "Normal",
+    "warning": "Advertencia",
+    "critical": "Crítico"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página solicitada no existe.",
+    "back": "Volver al inicio"
+  }
+}

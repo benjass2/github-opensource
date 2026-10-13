@@ -1,0 +1,29 @@
+
+.home {
+  padding: 24px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.description {
+  color: #8b949e;
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nodes-grid {
+    grid-template-columns: 1fr;
+  }
+}

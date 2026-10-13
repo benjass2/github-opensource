@@ -1,0 +1,58 @@
+
+.toolbar {
+  background: #161b22;
+  color: #e6edf3;
+  border-bottom: 1px solid #30363d;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.container {
+  height: calc(100vh - 64px);
+  background: #0d1117;
+}
+
+.sidebar {
+  width: 240px;
+  background: #161b22;
+  border-right: 1px solid #30363d;
+  padding: 16px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #e6edf3;
+  justify-content: flex-start;
+}
+
+.sidebar a.active {
+  background: #30363d;
+}
+
+.content {
+  min-height: 100%;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 170px;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+}

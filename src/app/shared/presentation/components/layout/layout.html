@@ -1,0 +1,40 @@
+
+<mat-toolbar class="toolbar">
+  <span class="brand">{{ 'toolbar.title' | translate }}</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button type="button"
+          aria-label="Change language to English"
+          (click)="changeLanguage('en')">
+    EN
+  </button>
+
+  <button mat-button type="button"
+          aria-label="Cambiar idioma a español"
+          (click)="changeLanguage('es')">
+    ES
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav mode="side" opened class="sidebar">
+    <nav aria-label="Main navigation">
+      <a mat-button routerLink="/home" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+        {{ 'sidebar.home' | translate }}
+      </a>
+
+      <a mat-button
+         routerLink="/repositories/manifests/new"
+         routerLinkActive="active">
+        <mat-icon>add_circle</mat-icon>
+        {{ 'sidebar.newManifest' | translate }}
+      </a>
+    </nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>

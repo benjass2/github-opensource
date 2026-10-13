@@ -1,0 +1,44 @@
+
+.node-card {
+  height: 100%;
+  background: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+mat-card-subtitle {
+  color: #8b949e;
+}
+
+mat-card-content {
+  margin-top: 20px;
+}
+
+.repository {
+  border-bottom: 1px solid #30363d;
+  padding: 10px 0;
+}
+
+.repository p {
+  margin: 5px 0;
+  color: #8b949e;
+}
+
+.capacity {
+  padding: 16px;
+  border-top: 1px solid #30363d;
+}
+
+.normal {
+  color: #3fb950;
+}
+
+.warning {
+  color: #d29922;
+}
+
+.critical {
+  color: #f85149;
+}

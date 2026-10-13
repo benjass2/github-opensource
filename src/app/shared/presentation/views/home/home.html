@@ -1,0 +1,21 @@
+
+<section class="home">
+  <h1>{{ 'home.title' | translate }}</h1>
+
+  <p class="description">
+    {{ 'home.description' | translate }}
+  </p>
+
+  <h2>{{ 'home.nodesTitle' | translate }}</h2>
+
+  <div class="nodes-grid">
+    @for (node of store.nodes(); track node.id) {
+      <app-ci-node-summary
+        [node]="node"
+        [manifests]="store.getManifestsByNode(node.id)"
+      />
+    } @empty {
+      <p>{{ 'home.empty' | translate }}</p>
+    }
+  </div>
+</section>
